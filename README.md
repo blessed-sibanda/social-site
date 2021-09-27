@@ -81,12 +81,26 @@ Create a superuser account
 (social-site) $ python manage.py createsuperuser
 ```
 
-Run the development server
+### Enable Social Authentication in Development Mode
+We want to serve the site through HTTPS during development in order to test social authentication with Twitter, and Google.
+However, several social services will not allow redirecting users to 127.0.0.1 or localhost after a successful authentication; they expect a domain name. So in order to make social authentication work in development mode, we will need a domain. 
 
-```bash
-(social-site) $ python manage.py runserver
+If you are on Linux or macOS, edit your /etc/hosts file and add the following line to it:
+
+```
+127.0.0.1 mysite.com
 ```
 
-Visit the site at [http://127.0.0.1:8000](http://127.0.0.1:8000)
+This will tell your computer to point the mysite.com hostname to your own machine. If you are using Windows, your hosts file is located at `C:\Windows\System32\Drivers\etc\hosts`.
+
+
+### Run the application
+Run the development server through HTTPS using the `runserver_plus` extension.
+
+```bash
+(social-site) $ python manage.py runserver_plus --cert-file cert.crt
+```
+
+Visit the site at [https://127.0.0.1:8000](https://127.0.0.1:8000)
 
 

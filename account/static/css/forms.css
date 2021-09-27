@@ -62,3 +62,7 @@ ul.errorlist {
 .change-password-form ul li {
   color: #ddd;
 }
+
+.login-form {
+  float: left;
+}
