@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Muli);
 
 :root {
-  --main-color: #12c064;
+  --main-color: #3a8ff0;
 }
 
 body {
@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-  color: #00a74f;
+  color: #305dd8d0;
 }
 
 h1,
