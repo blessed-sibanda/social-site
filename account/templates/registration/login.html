@@ -17,7 +17,10 @@
         </p>
     {% endif %}
     <form action="{% url 'login' %}" method='post' novalidate>
-        {{ form }}
+        <label for="id_username">Username or Email:</label>
+        {{ form.username }}
+        {{ form.password.label_tag }}
+        {{ form.password }}
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}" >
         <input type="submit" value="Log-in">
