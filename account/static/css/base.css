@@ -10,10 +10,6 @@ body {
   font-family: helvetica, sans-serif;
 }
 
-p {
-  line-height: 1.8;
-}
-
 a {
   color: var(--main-color);
   text-decoration: none;

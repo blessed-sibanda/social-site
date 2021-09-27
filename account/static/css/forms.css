@@ -5,6 +5,7 @@ form {
 form p {
   width: 100%;
   overflow: auto;
+  margin: 0;
 }
 
 label {
@@ -35,11 +36,19 @@ a.button {
   text-transform: uppercase;
 }
 
-.errorlist {
+ul.errorlist {
   color: #cc0033;
   float: left;
   clear: both;
-  padding-left: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.errorlist li {
+  font-size: 0.85rem;
+  margin: 0.2em 0 0.3em 0;
+  text-align: left;
 }
 
 .helptext {
