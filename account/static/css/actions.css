@@ -1,0 +1,20 @@
+.action {
+  clear: both;
+  overflow: auto;
+}
+
+.action .images {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.action .date {
+  font-style: italic;
+  color: #ccc;
+}
+
+a.like,
+a.follow {
+  float: right;
+  margin-top: -8px;
+}
