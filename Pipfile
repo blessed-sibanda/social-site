@@ -9,6 +9,7 @@ psycopg2-binary = "*"
 pillow = "*"
 social-auth-app-django = "*"
 pyopenssl = "*"
+certifi = "*"
 
 [dev-packages]
 autopep8 = "*"

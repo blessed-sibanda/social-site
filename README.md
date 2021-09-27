@@ -101,6 +101,11 @@ Run the development server through HTTPS using the `runserver_plus` extension.
 (social-site) $ python manage.py runserver_plus --cert-file cert.crt
 ```
 
-Visit the site at [https://127.0.0.1:8000](https://127.0.0.1:8000)
+Visit the site at [https://mysite:8000/account/login](https://mysite:8000/account/login)
 
+Log in with your account (or with your google account) and then drag the **BOOKMARK IT** button to the bookmarks toolbar of your
+browser. Make sure the the bookmarks toolbar of your browser is visible. If its not visible, you can use the following links to see how: 
 
+1. For firefox [using this link](https://workona.com/pages/how-to-fix-missing-bookmark-toolbar-firefox/)
+
+2. For google chrome [use this link](https://www.howtogeek.com/415733/how-to-show-or-hide-the-google-chrome-bookmarks-bar/)
