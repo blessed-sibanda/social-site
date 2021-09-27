@@ -6,21 +6,23 @@ form p {
 }
 
 label {
-  float: left;
-  clear: both;
   color: #333;
   margin-bottom: 4px;
+  display: block;
 }
 
 input,
 textarea {
-  clear: both;
-  float: left;
   margin: 0 0 10px;
   background: #efefef;
   border: 0;
   padding: 6px 10px;
   font-size: 14px;
+  display: block;
+}
+
+label#id_photo {
+  float: left;
 }
 
 input[type='submit'],
@@ -35,8 +37,6 @@ a.button {
 
 ul.errorlist {
   color: #cc0033;
-  float: left;
-  clear: both;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -51,8 +51,6 @@ ul.errorlist {
 .helptext {
   margin: 0 0 10px 0;
   color: #aaa;
-  clear: both;
-  float: left;
   font-size: 13px;
 }
 
