@@ -26,10 +26,6 @@
   margin: 20px 10px 0;
 }
 
-#image-list {
-  overflow: auto;
-}
-
 #image-list .image {
   float: left;
   width: 220px;
