@@ -12,12 +12,13 @@
     {% else %}
         <p>Please use the following form to log-in:</p>
     {% endif %}
-    <div class="login-form">
-        <form action="{% url 'login' %}" method='post' novalidate>
-            {{ form.as_p }}
-            {% csrf_token %}
-            <input type="hidden" name="next" value="{{ next }}" >
-            <input type="submit" value="Log-in">
-        </form>
-    </div>
+    <form action="{% url 'login' %}" method='post' novalidate>
+        {{ form }}
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}" >
+        <input type="submit" value="Log-in">
+    </form>
+    <p class='cleared'>
+        <a href="{% url 'password_reset' %}">Forgot password?</a>
+    </p>
 {% endblock %}

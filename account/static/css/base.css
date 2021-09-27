@@ -46,3 +46,7 @@ ol {
 main#main {
   padding: 30px 100px;
 }
+
+p.cleared {
+  clear: both;
+}

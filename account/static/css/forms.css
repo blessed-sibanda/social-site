@@ -56,10 +56,6 @@ ul.errorlist {
   font-size: 13px;
 }
 
-.login-form {
-  float: left;
-}
-
 .change-password-form ul {
   list-style-type: none;
   padding-inline-start: 15px;
