@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/main.css' %}?version=51">
-    <script src="{% static 'js/jquery.min.js' %}"></script>
 </head>
 <body>
     <header id="header">
@@ -47,5 +46,27 @@
     <main id="main">
         {% block content %}{% endblock %}
     </main>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/js.cookie.min.js' %}"></script>
+    <script>
+        var csrftoken = Cookies.get('csrftoken');
+
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+
+        $(document).ready(function() {
+            {% block domready %}{% endblock %}
+        })
+    </script>
 </body>
 </html>
