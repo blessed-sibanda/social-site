@@ -10,6 +10,7 @@ pillow = "*"
 social-auth-app-django = "*"
 pyopenssl = "*"
 certifi = "*"
+easy-thumbnails = "*"
 
 [dev-packages]
 autopep8 = "*"

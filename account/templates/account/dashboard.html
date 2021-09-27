@@ -5,7 +5,7 @@
 {% block content %}
     <h1>Dashboard</h1>
 
-    {% with total_images_created=request.user.images_created.count %}
+    {% with total_images_created=request.user.image_set.count %}
     
         <p>
             Welcome to your dashboard. You have bookmarked 
