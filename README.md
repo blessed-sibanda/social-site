@@ -99,7 +99,7 @@ Create a superuser account
 
 ### Enable Social Authentication in Development Mode
 We want to serve the site through HTTPS during development in order to test social authentication with Google.
-However, several social services will not allow redirecting users to 127.0.0.1 or localhost after a successful authentication; they expect a domain name. So in order to make social authentication work in development mode, we will need a domain. 
+However, several social services will not allow redirecting users to `127.0.0.1` or `localhost` after a successful authentication; they expect a domain name. So in order to make social authentication work in development mode, we will need a domain. 
 
 If you are on Linux or macOS, edit your /etc/hosts file and add the following line to it:
 
