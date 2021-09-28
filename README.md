@@ -6,7 +6,7 @@ A django social site application
 
 - Users can register, log-in, create and manage their profiles
 
-- Users can follow each other
+- Users can follow each other and track what other users share on the platform
 
 - Users can bookmark and share images that they find on other websites
 
