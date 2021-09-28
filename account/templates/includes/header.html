@@ -1,0 +1,31 @@
+<header id="header">
+    <span class="logo">Social Site</span>
+    {% if request.user.is_authenticated %}
+        <ul class="menu">
+            <li {% if section == 'dashboard' %}class='selected'{% endif %}>
+                <a href="{% url 'dashboard' %}">My dashboard</a>
+            </li>
+            <li {% if section == 'images' %}class='selected'{% endif %}>
+                <a href="{% url 'images:image_list' %}">Images</a>
+            </li>
+            <li {% if section == 'people' %}class='selected'{% endif %}>
+                <a href="{% url 'user_list' %}">People</a>
+            </li>
+        </ul>
+    {% endif %}
+    <span class="user">
+        {% if request.user.is_authenticated %}
+            Hello 
+            <strong>
+            {% if request.user.first_name %}
+                {{ request.user.first_name }}
+            {% else %}
+                {{ request.user.username }}
+            {% endif %}
+            </strong>,
+            <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
+            <a href="{% url 'login' %}">Log-in</a>
+        {% endif %}
+    </span>
+</header>
