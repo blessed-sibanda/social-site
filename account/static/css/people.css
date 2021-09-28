@@ -23,10 +23,22 @@ img.user-detail {
   object-fit: cover;
 }
 
+.profile {
+  display: flex;
+}
+
+.profile .follow-actions {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .profile-info {
-  float: left;
   overflow: auto;
   margin-right: 20px;
 }
 
+.profile-details {
+  clear: both;
+}
 
